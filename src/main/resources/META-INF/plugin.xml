@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>com.markup_plugin</id>
+    <name>Markup Smoke Tests</name>
+    <version>1.0.0</version>
+    <vendor>Wrike</vendor>
+
+    <description>IDEA Plugin for adding smoke tests markup</description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Smoke markup" anchor="right" factoryClass="com.wrike.qaa.plugins.markup.ui.AutosmokeWindowFactory"/>
+    </extensions>
+
+    <idea-version since-build="160"/>
+
+</idea-plugin>

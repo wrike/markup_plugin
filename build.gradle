@@ -1,0 +1,27 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.4.9'
+}
+
+group 'org.example'
+version '1.0.0'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.commons:commons-collections4:4.4'
+}
+
+intellij {
+    version '2019.1'
+    intellij.updateSinceUntilBuild false
+    runIde.jbrVersion='11_0_3b360.2'
+    runIde.maxHeapSize='1g'
+}
+
+test {
+    useJUnitPlatform()
+}
